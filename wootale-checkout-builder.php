@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name: Checkoutly – Custom Checkout Builder for WooCommerce
- * Plugin URI: https://checkoutly.com/
+ * Plugin URI: https://wootale.com/
  * Description: Dashboard checkout workflow builder for the WooCommerce classic checkout shortcode.
  * Version: 0.7.2
  * Requires at least: 6.5
  * Requires PHP: 7.4
  * Requires Plugins: woocommerce
- * Author: Checkoutly
+ * Author: M Arif
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: checkoutly
