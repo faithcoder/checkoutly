@@ -49,12 +49,6 @@ No. Checkoutly keeps WooCommerce responsible for cart, shipping, taxes, payment,
 
 Yes. Enabled custom fields are sanitized and saved to WooCommerce order meta using the `_checkoutly_` prefix.
 
-== Screenshots ==
-
-1. Checkoutly Checkout Builder dashboard.
-2. Field settings popup.
-3. Classic checkout multi-step frontend.
-
 == Changelog ==
 
 = 0.7.2 =

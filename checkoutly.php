@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Checkoutly – Custom Checkout Builder for WooCommerce
- * Plugin URI: https://wootale.com/
+ * Plugin URI: https://checkoutly.com/
  * Description: Dashboard checkout workflow builder for the WooCommerce classic checkout shortcode.
  * Version: 0.7.2
  * Requires at least: 6.5

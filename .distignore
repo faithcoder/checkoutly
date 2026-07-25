@@ -1,0 +1,17 @@
+.DS_Store
+.gitkeep
+.git/
+.gitignore
+.distignore
+AGENTS.md
+README.md
+composer.json
+composer.lock
+package.json
+package-lock.json
+phpcs.xml.dist
+tests/
+node_modules/
+vendor/
+dist/
+*.log
