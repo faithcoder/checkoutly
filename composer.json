@@ -1,0 +1,20 @@
+{
+	"name": "checkoutly/checkoutly",
+	"description": "Checkoutly Checkout Builder free plugin.",
+	"version": "0.7.2",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"autoload": {
+		"psr-4": {
+			"Checkoutly\\CheckoutBuilder\\": "includes/"
+		}
+	},
+	"require": {
+		"php": ">=7.4"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+		"phpcompatibility/phpcompatibility-wp": "^2.1",
+		"wp-coding-standards/wpcs": "^3.1"
+	}
+}

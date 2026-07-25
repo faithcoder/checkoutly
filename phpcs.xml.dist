@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ruleset name="Checkoutly Checkout Builder">
+	<description>WordPress Coding Standards for Checkoutly Checkout Builder.</description>
+	<file>checkoutly.php</file>
+	<file>includes</file>
+	<file>tests/php</file>
+	<exclude-pattern>vendor/*</exclude-pattern>
+	<rule ref="WordPress"/>
+</ruleset>
