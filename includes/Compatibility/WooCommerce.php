@@ -59,7 +59,7 @@ final class WooCommerce {
 		printf(
 			'<div class="notice notice-error"><p>%s</p></div>',
 			esc_html__(
-				'Checkoutly Checkout Builder requires WooCommerce and the classic checkout shortcode.',
+				'Checkoutly requires WooCommerce and the classic checkout shortcode.',
 				'checkoutly'
 			)
 		);

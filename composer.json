@@ -1,6 +1,6 @@
 {
 	"name": "checkoutly/checkoutly",
-	"description": "Checkoutly Checkout Builder free plugin.",
+	"description": "Checkoutly custom checkout builder free plugin.",
 	"version": "0.7.2",
 	"type": "wordpress-plugin",
 	"license": "GPL-2.0-or-later",

@@ -77,8 +77,8 @@ final class Builder {
 	 */
 	public function register_menu(): void {
 		add_menu_page(
-			__( 'Checkoutly Checkout', 'checkoutly' ),
-			__( 'Checkoutly Checkout', 'checkoutly' ),
+			__( 'Checkoutly', 'checkoutly' ),
+			__( 'Checkoutly', 'checkoutly' ),
 			'manage_woocommerce',
 			'checkoutly-dashboard',
 			array( $this, 'render' ),
@@ -139,7 +139,7 @@ final class Builder {
 
 		wp_send_json_success(
 			array(
-				'message' => __( 'Checkoutly checkout builder saved.', 'checkoutly' ),
+				'message' => __( 'Checkoutly builder saved.', 'checkoutly' ),
 			)
 		);
 	}
@@ -172,7 +172,7 @@ final class Builder {
 		$updated = isset( $_GET['updated'] ) ? sanitize_text_field( wp_unslash( $_GET['updated'] ) ) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- redirect param after verified save.
 
 		if ( '1' === $updated ) {
-			echo '<div class="notice notice-success is-dismissible"><p>' . esc_html__( 'Checkoutly checkout builder saved.', 'checkoutly' ) . '</p></div>';
+			echo '<div class="notice notice-success is-dismissible"><p>' . esc_html__( 'Checkoutly builder saved.', 'checkoutly' ) . '</p></div>';
 		}
 
 		echo '<form method="post" action="' . esc_url( admin_url( 'admin-post.php' ) ) . '" id="checkoutly-builder-form">';
@@ -195,7 +195,7 @@ final class Builder {
 
 	private function render_header( string $checkout_url ): void {
 		echo '<div class="checkoutly-topbar">';
-		echo '<div class="checkoutly-topbar-main"><div class="checkoutly-brand"><span class="checkoutly-logo">WT</span><h1><strong>Checkoutly</strong> <span>Multi-Step Checkout Builder</span></h1></div>';
+		echo '<div class="checkoutly-topbar-main"><div class="checkoutly-brand"><span class="checkoutly-logo">CL</span><h1><strong>Checkoutly</strong> <span>Multi-Step Checkout Builder</span></h1></div>';
 		echo '<div class="checkoutly-actions"><a class="button" href="https://checkoutly.com/docs" target="_blank" rel="noreferrer">Docs</a><a class="button" href="' . esc_url( $checkout_url ) . '" target="_blank" rel="noreferrer">Preview Checkout</a><button class="button button-primary" type="submit" form="checkoutly-builder-form">Save Changes</button></div></div>';
 		echo '<nav class="checkoutly-tabs"><a class="is-active" data-checkoutly-tab="builder">Classic Builder</a><a class="checkoutly-tab-disabled" aria-disabled="true">Block Builder <span>' . esc_html__( 'Coming Soon', 'checkoutly' ) . '</span></a><a data-checkoutly-tab="settings">Settings</a><a class="checkoutly-tab-disabled" aria-disabled="true">Rules <span>' . esc_html__( 'Coming Soon', 'checkoutly' ) . '</span></a></nav>';
 		echo '</div>';

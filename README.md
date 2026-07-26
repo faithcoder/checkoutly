@@ -1,12 +1,12 @@
-# Checkoutly Checkout Builder
+# Checkoutly
 
-Checkoutly Checkout Builder is a dashboard-style checkout workflow builder for the WooCommerce classic checkout shortcode.
+Checkoutly is a dashboard-style checkout workflow builder for the WooCommerce classic checkout shortcode.
 
-The active plugin architecture is no longer based on Gutenberg Checkout Blocks. Merchants configure checkout steps, native WooCommerce fields, and custom fields from the Checkoutly Checkout dashboard. WooCommerce still renders and processes the classic checkout form through its standard shortcode flow.
+The active plugin architecture is no longer based on Gutenberg Checkout Blocks. Merchants configure checkout steps, native WooCommerce fields, and custom fields from the Checkoutly dashboard. WooCommerce still renders and processes the classic checkout form through its standard shortcode flow.
 
 ## Current Scope
 
-- Admin dashboard at `Checkoutly Checkout > Checkout Builder`.
+- Admin dashboard at `Checkoutly > Checkout Builder`.
 - Default three-step workflow.
 - Contact, billing, and shipping native WooCommerce fields start in the first step.
 - Native fields can be moved between steps, marked required/optional, or disabled.

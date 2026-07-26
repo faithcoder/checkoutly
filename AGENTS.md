@@ -1,8 +1,8 @@
-# AGENTS.md — Checkoutly Checkout Builder
+# AGENTS.md — Checkoutly
 
 ## Project Direction
 
-Checkoutly Checkout Builder is now a dashboard-style workflow builder for the WooCommerce classic checkout shortcode.
+Checkoutly is now a dashboard-style workflow builder for the WooCommerce classic checkout shortcode.
 
 The plugin is not based on Gutenberg Checkout Blocks. Do not add block metadata, editor block bundles, Store API checkout extensions, or WooCommerce Checkout Block nesting experiments unless the user explicitly asks to revive that architecture.
 
@@ -18,7 +18,7 @@ WooCommerce remains responsible for cart state, shipping, tax, payment, order cr
 
 ## Active Product Shape
 
-- Admin dashboard under `Checkoutly Checkout`.
+- Admin dashboard under `Checkoutly`.
 - Builder canvas with up to three free steps.
 - Default first step includes native contact, billing, and shipping fields.
 - Users can move fields between steps.

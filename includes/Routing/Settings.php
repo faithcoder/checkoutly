@@ -36,7 +36,7 @@ final class Settings {
 	 * @return array<string,string>
 	 */
 	public function register_section( array $sections ): array {
-		$sections['checkoutly_checkout_routing'] = __( 'Checkoutly Checkout Routing', 'checkoutly' );
+		$sections['checkoutly_checkout_routing'] = __( 'Checkoutly Routing', 'checkoutly' );
 
 		return $sections;
 	}
@@ -55,7 +55,7 @@ final class Settings {
 
 		return array(
 			array(
-				'title' => __( 'Checkoutly Checkout Routing', 'checkoutly' ),
+				'title' => __( 'Checkoutly Routing', 'checkoutly' ),
 				'type'  => 'title',
 				'id'    => 'checkoutly_checkout_routing_options',
 			),

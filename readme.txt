@@ -5,7 +5,7 @@ Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 7.4
 Requires Plugins: woocommerce
-Stable tag: 0.7.2
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,13 +34,13 @@ This initial release focuses on the classic WooCommerce checkout shortcode. WooC
 1. Upload the `checkoutly` folder to the `/wp-content/plugins/` directory, or install it from the WordPress Plugins screen.
 2. Activate the plugin through the Plugins screen in WordPress.
 3. Make sure WooCommerce is active.
-4. Go to WooCommerce > Checkoutly Checkout > Checkout Builder.
+4. Go to Checkoutly > Checkout Builder.
 5. Configure the checkout workflow and save changes.
 
 == Usage ==
 
 1. Create or edit your WooCommerce checkout page and make sure it uses the classic checkout shortcode: `[woocommerce_checkout]`.
-2. Open Checkoutly Checkout > Checkout Builder in the WordPress dashboard.
+2. Open Checkoutly > Checkout Builder in the WordPress dashboard.
 3. Review the default checkout steps. The first step includes WooCommerce contact, billing, and shipping fields by default.
 4. Drag fields between steps to organize the checkout flow.
 5. Open a field's settings to change its label, placeholder, default value, required state, enabled state, width, and display locations.
@@ -48,7 +48,7 @@ This initial release focuses on the classic WooCommerce checkout shortcode. WooC
 7. Adjust the multi-step settings for indicators, connectors, colors, navigation text, and step behavior.
 8. Save the builder and test checkout with a product in the cart.
 
-For routing settings, go to WooCommerce > Settings > Products > Checkoutly Checkout Routing. You can keep the standard product-to-cart-to-checkout flow, enable Skip Cart, or show a separate Buy Now button on simple product pages.
+For routing settings, go to WooCommerce > Settings > Products > Checkoutly Routing. You can keep the standard product-to-cart-to-checkout flow, enable Skip Cart, or show a separate Buy Now button on simple product pages.
 
 == Frequently Asked Questions ==
 
@@ -69,6 +69,9 @@ No. Checkoutly keeps WooCommerce responsible for cart, shipping, taxes, payment,
 Yes. Enabled custom fields are sanitized and saved to WooCommerce order meta using the `_checkoutly_` prefix.
 
 == Changelog ==
+
+= 1.0.0 =
+* Initial Release
 
 = 0.7.2 =
 * Added classic checkout builder workflow.

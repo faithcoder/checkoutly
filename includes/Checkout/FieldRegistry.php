@@ -1,6 +1,6 @@
 <?php
 /**
- * Checkoutly checkout field registry.
+ * Checkoutly field registry.
  *
  * @package Checkoutly\CheckoutBuilder
  */

@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name: Checkoutly – Custom Checkout Builder for WooCommerce
- * Plugin URI: https://checkoutly.com/
+ * Plugin URI: https://faithcoder.com/
  * Description: Dashboard checkout workflow builder for the WooCommerce classic checkout shortcode.
- * Version: 0.7.2
+ * Version: 1.0.0
  * Requires at least: 6.5
  * Requires PHP: 7.4
  * Requires Plugins: woocommerce
@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'CHECKOUTLY_VERSION', '0.7.2' );
+define( 'CHECKOUTLY_VERSION', '1.0.0' );
 define( 'CHECKOUTLY_PLUGIN_FILE', __FILE__ );
 define( 'CHECKOUTLY_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'CHECKOUTLY_PLUGIN_URL', plugin_dir_url( __FILE__ ) );

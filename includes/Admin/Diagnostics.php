@@ -46,7 +46,7 @@ final class Diagnostics {
 	public function register_menu(): void {
 		add_submenu_page(
 			'tools.php',
-			__( 'Checkoutly Checkout Builder Diagnostics', 'checkoutly' ),
+			__( 'Checkoutly Builder Diagnostics', 'checkoutly' ),
 			__( 'Checkoutly Diagnostics', 'checkoutly' ),
 			'manage_options',
 			'checkoutly-diagnostics',
@@ -65,7 +65,7 @@ final class Diagnostics {
 		$rows = $this->get_rows();
 
 		echo '<div class="wrap">';
-		echo '<h1>' . esc_html__( 'Checkoutly Checkout Builder Diagnostics', 'checkoutly' ) . '</h1>';
+		echo '<h1>' . esc_html__( 'Checkoutly Builder Diagnostics', 'checkoutly' ) . '</h1>';
 		echo '<table class="widefat striped"><tbody>';
 
 		foreach ( $rows as $label => $value ) {

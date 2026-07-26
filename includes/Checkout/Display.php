@@ -39,7 +39,7 @@ final class Display {
 			return;
 		}
 
-		echo '<div class="checkoutly-order-fields"><h3>' . esc_html__( 'Checkoutly Checkout Fields', 'checkoutly' ) . '</h3>';
+		echo '<div class="checkoutly-order-fields"><h3>' . esc_html__( 'Checkoutly Fields', 'checkoutly' ) . '</h3>';
 
 		foreach ( $fields as $field ) {
 			printf(

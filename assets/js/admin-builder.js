@@ -846,7 +846,7 @@ if (form) {
 			if (!payload || !payload.success) {
 				throw new Error(payload && payload.data && payload.data.message ? payload.data.message : 'Unable to save checkout builder.');
 			}
-			showSaveNotice('success', payload.data && payload.data.message ? payload.data.message : 'Checkoutly checkout builder saved.');
+			showSaveNotice('success', payload.data && payload.data.message ? payload.data.message : 'Checkoutly builder saved.');
 		}).catch(function(error){
 			showSaveNotice('error', error.message || 'Unable to save checkout builder.');
 		}).finally(function(){
