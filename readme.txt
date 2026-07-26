@@ -1,4 +1,4 @@
-=== Checkoutly Checkout Builder ===
+=== Checkoutly – Custom Checkout Builder for WooCommerce ===
 Contributors: checkoutly
 Tags: woocommerce, checkout, checkout fields, multistep checkout, checkout builder
 Requires at least: 6.5
@@ -13,9 +13,11 @@ Build a configurable WooCommerce classic checkout workflow with steps, native ch
 
 == Description ==
 
-Checkoutly Checkout Builder adds a dashboard-style builder for WooCommerce classic shortcode checkout pages.
+Checkoutly – Custom Checkout Builder for WooCommerce adds a dashboard-style builder for WooCommerce classic shortcode checkout pages.
 
 The plugin lets store owners organize native WooCommerce checkout fields and basic custom fields into a guided checkout workflow. Field values are saved through WooCommerce order meta APIs and can be shown in order details, customer emails, and the thank-you page when enabled.
+
+This initial release focuses on the classic WooCommerce checkout shortcode. WooCommerce continues to handle the cart, shipping, taxes, payments, order creation, and checkout validation while Checkoutly controls field organization and the customer-facing step layout.
 
 = Current features =
 
@@ -35,11 +37,28 @@ The plugin lets store owners organize native WooCommerce checkout fields and bas
 4. Go to WooCommerce > Checkoutly Checkout > Checkout Builder.
 5. Configure the checkout workflow and save changes.
 
+== Usage ==
+
+1. Create or edit your WooCommerce checkout page and make sure it uses the classic checkout shortcode: `[woocommerce_checkout]`.
+2. Open Checkoutly Checkout > Checkout Builder in the WordPress dashboard.
+3. Review the default checkout steps. The first step includes WooCommerce contact, billing, and shipping fields by default.
+4. Drag fields between steps to organize the checkout flow.
+5. Open a field's settings to change its label, placeholder, default value, required state, enabled state, width, and display locations.
+6. Drag basic custom fields from the components panel into a step when you need extra customer information.
+7. Adjust the multi-step settings for indicators, connectors, colors, navigation text, and step behavior.
+8. Save the builder and test checkout with a product in the cart.
+
+For routing settings, go to WooCommerce > Settings > Products > Checkoutly Checkout Routing. You can keep the standard product-to-cart-to-checkout flow, enable Skip Cart, or show a separate Buy Now button on simple product pages.
+
 == Frequently Asked Questions ==
 
 = Does this plugin support WooCommerce block checkout? =
 
 This version is built for the classic WooCommerce checkout shortcode. Block checkout support is not included in this release.
+
+= Which checkout shortcode should I use? =
+
+Use `[woocommerce_checkout]` on the checkout page. Checkoutly reorganizes the classic checkout form after WooCommerce renders it.
 
 = Does it replace WooCommerce checkout processing? =
 

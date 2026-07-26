@@ -148,7 +148,7 @@ final class Builder {
 	 * Persist the posted workflow payload.
 	 */
 	private function save_submitted_workflow(): void {
-		$raw      = isset( $_POST['checkoutly_workflow'] ) ? wp_check_invalid_utf8( wp_unslash( $_POST['checkoutly_workflow'] ) ) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Missing -- nonce verified by callers.
+		$raw      = isset( $_POST['checkoutly_workflow'] ) ? sanitize_textarea_field( wp_unslash( $_POST['checkoutly_workflow'] ) ) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Missing -- nonce verified by callers.
 		$decoded  = json_decode( (string) $raw, true );
 		$workflow = is_array( $decoded ) ? $decoded : $this->workflow->defaults();
 
@@ -169,7 +169,7 @@ final class Builder {
 		echo '<div class="wrap checkoutly-admin">';
 		$this->render_header( $checkout_url );
 
-		$updated = isset( $_GET['updated'] ) ? sanitize_text_field( wp_unslash( $_GET['updated'] ) ) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Missing -- redirect param after verified save.
+		$updated = isset( $_GET['updated'] ) ? sanitize_text_field( wp_unslash( $_GET['updated'] ) ) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- redirect param after verified save.
 
 		if ( '1' === $updated ) {
 			echo '<div class="notice notice-success is-dismissible"><p>' . esc_html__( 'Checkoutly checkout builder saved.', 'checkoutly' ) . '</p></div>';
